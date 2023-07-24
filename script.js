@@ -16,6 +16,12 @@ function lengthPrompt() {
   return lengthPrompt()
 }
 
+function determineNumber(){
+  var randomNumber = Math.floor(Math.random() * numArr.length);
+  var passwordNumber = numArr[randomNumber];
+  return passwordNumber;
+}
+
 
 
 // Write password to the #password input
