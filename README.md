@@ -1,19 +1,38 @@
-# Password-Generator
-A javascript password generator
-```
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN asked for character types to include in the password
-THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
-```
+# <Password Generator>
+
+## Description
+
+I created this application to solve the general problem of easily discovered passwords. No longer will you struggle with coming up with strong, unique passwords or feel the need to use the same password repeatedly which leads to multiple hacked accounts after a data breach. 
+
+## Table of Contents (Optional)
+
+- [](#)
+  - [Description](#description)
+  - [Table of Contents (Optional)](#table-of-contents-optional)
+  - [Installation](#installation)
+  - [Credits](#credits)
+  - [License](#license)
+  - [Features](#features)
+  - [Images](#images)
+
+## Installation
+
+Clone the code via your terminal, open in an IDE, right click on index.html and open with a live server.
+
+
+## Credits
+
+OSU homework week 3 for javascript functions recap
+
+## License
+
+MIT
+
+## Features
+
+Fully customizable, strong, and unique password generation in seconds.
+
+## Images
+
+![Application image 1](./Assets/images/passwordGen.png)
+
