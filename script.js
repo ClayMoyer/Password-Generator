@@ -39,7 +39,6 @@ function determineSpecialCharacter() {
   var passwordSpecial = specialCharacterArr[randomSpecial];
   return passwordSpecial
 }
-g
 
 // Write password to the #password input
 function writePassword() {
