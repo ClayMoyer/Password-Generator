@@ -22,7 +22,7 @@ function determineNumber(){
   return passwordNumber;
 }
 
-function determinCapitalCase() {
+function determineCapitalCase() {
   var randomCapital = Math.floor(Math.random() * capitalCaseArr.length);
   var passwordCapital = capitalCaseArr[randomCapital];
   return passwordCapital;
@@ -38,6 +38,36 @@ function determineSpecialCharacter() {
   var randomSpecial = Math.floor(Math.random() * specialCharacterArr.length);
   var passwordSpecial = specialCharacterArr[randomSpecial];
   return passwordSpecial
+}
+
+function generatePassword() {
+  selectedCharacterArr.length = 0
+  passwordLength = lengthPrompt()
+
+  var numberPrompt = confirm("Would you like numbers in your password?")
+  if (numberPrompt === true) {
+    selectedCharacterArr.push(determineNumber)
+  } else if (numberPrompt === false) 
+  {}
+
+  var capitalPrompt = confirm("Would you like capital letters in your password?")
+  if (capitalPrompt === true) {
+    selectedCharacterArr.push(determineCapitalCase)
+  } else if (capitalPrompt === false) 
+  {}
+
+  var lowerCasePrompt = confirm("Would you like lower case letters in your password?")
+  if (lowerCasePrompt === true) {
+    selectedCharacterArr.push(determineLowerCase)
+  } else if (lowerCasePrompt === false) 
+  {}
+
+  var specialCharacterPrompt = confirm("Would you like special characters in your password?")
+  if (specialCharacterPrompt === true) {
+    selectedCharacterArr.push(determineSpecialCharacter)
+  } else if (specialCharacterPrompt === false)
+  {}
+  
 }
 
 // Write password to the #password input
