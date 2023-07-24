@@ -68,7 +68,16 @@ function generatePassword() {
   } else if (specialCharacterPrompt === false)
   {}
   
+  var generatedPassword = ""
+  for(let i = 0; i < passwordLength; i++){
+    shuffledCharacters = Math.floor(Math.random() * selectedCharacterArr.length)
+    selectedCharacters = selectedCharacterArr[shuffledCharacters]()
+    generatedPassword += selectedCharacters
+  }
+  return generatedPassword
 }
+
+var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
