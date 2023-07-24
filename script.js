@@ -22,7 +22,15 @@ function determineNumber(){
   return passwordNumber;
 }
 
+function capitalCase() {
+  var randomCapital Math.floor(Math.random() * capitalCaseArr.length);
+  var passwordCapital = capitalCaseArr[randomCapital];
+  return passwordCapital;
+}
 
+function lowerCase() {
+
+}
 
 // Write password to the #password input
 function writePassword() {
