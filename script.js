@@ -23,14 +23,17 @@ function determineNumber(){
 }
 
 function capitalCase() {
-  var randomCapital Math.floor(Math.random() * capitalCaseArr.length);
+  var randomCapital = Math.floor(Math.random() * capitalCaseArr.length);
   var passwordCapital = capitalCaseArr[randomCapital];
   return passwordCapital;
 }
 
 function lowerCase() {
-
+  var randomLower = Math.floor(Math.random() * lowerCaseArr.length);
+  var passwordLower = lowerCaseArr[randomLower];
+  return passwordLower;
 }
+
 
 // Write password to the #password input
 function writePassword() {
