@@ -22,18 +22,23 @@ function determineNumber(){
   return passwordNumber;
 }
 
-function capitalCase() {
+function determinCapitalCase() {
   var randomCapital = Math.floor(Math.random() * capitalCaseArr.length);
   var passwordCapital = capitalCaseArr[randomCapital];
   return passwordCapital;
 }
 
-function lowerCase() {
+function determineLowerCase() {
   var randomLower = Math.floor(Math.random() * lowerCaseArr.length);
   var passwordLower = lowerCaseArr[randomLower];
   return passwordLower;
 }
 
+function determineSpecialCharacter() {
+  var randomSpecial = Math.floor(Math.random() * specialCharacterArr.length);
+  var passwordSpecial = specialCharacterArr[randomSpecial];
+  return passwordSpecial
+}
 
 // Write password to the #password input
 function writePassword() {
