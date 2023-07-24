@@ -7,8 +7,11 @@ function lengthPrompt() {
   if(passwordLength >= 8 && passwordLength <= 128) {
     return passwordLength
   }
+  alert("Selected password length not allowed.")
   return lengthPrompt()
 }
+
+
 
 // Write password to the #password input
 function writePassword() {
