@@ -74,7 +74,7 @@ function generatePassword() {
     selectedCharacters = selectedCharacterArr[shuffledCharacters]()
     generatedPassword += selectedCharacters
   }
-  
+  return generatedPassword
 }
 
 // Write password to the #password input
